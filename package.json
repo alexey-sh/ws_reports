@@ -1,0 +1,22 @@
+{
+  "name": "w",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.13.2",
+    "cookie-parser": "^1.3.5",
+    "cookie-session": "^1.2.0",
+    "ejs": "^2.3.3",
+    "express": "^4.13.1",
+    "express-session": "^1.11.3",
+    "request": "^2.60.0",
+    "underscore": "^1.8.3",
+    "xml2js": "^0.4.9"
+  }
+}
