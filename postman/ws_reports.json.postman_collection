@@ -1,0 +1,195 @@
+{
+	"id": "08113610-9d18-1f2f-6b6a-2c20d34de539",
+	"name": "ws_reports",
+	"description": "",
+	"order": [
+		"07b4a9ef-60d0-a820-1862-745d74ab037d",
+		"bc3da04c-dc71-caa7-fa67-fa023dbf06da",
+		"52d78670-7aea-f188-1a40-09f3bfa3ecc6",
+		"0d8eb48a-5306-823f-47e9-bff30032f64b",
+		"586df342-aaaf-741e-47d9-5530ce641e67",
+		"cafffa3b-df32-d853-e311-72d1ba464daa",
+		"aa67962d-0437-02f3-b793-13f9dd7fec10"
+	],
+	"folders": [],
+	"timestamp": 1438868177928,
+	"owner": 0,
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "07b4a9ef-60d0-a820-1862-745d74ab037d",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{url}}/api/login",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1438868912388,
+			"name": "login",
+			"description": "",
+			"collectionId": "08113610-9d18-1f2f-6b6a-2c20d34de539",
+			"responses": [],
+			"rawModeData": "{\"token\": \"sfdbBefVdNeANts9RwTwO1dsT0BnhV5dbu0hjNtb\"}"
+		},
+		{
+			"id": "0d8eb48a-5306-823f-47e9-bff30032f64b",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{url}}/api/projects/19091",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "08113610-9d18-1f2f-6b6a-2c20d34de539",
+			"data": [
+				{
+					"key": "token",
+					"value": "sfdbBefVdNeANts9RwTwO1dsT0BnhV5dbu0hjNtb",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "get /projects/19091",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1438869698085,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "52d78670-7aea-f188-1a40-09f3bfa3ecc6",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{url}}/api/projects",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "08113610-9d18-1f2f-6b6a-2c20d34de539",
+			"data": [
+				{
+					"key": "token",
+					"value": "sfdbBefVdNeANts9RwTwO1dsT0BnhV5dbu0hjNtb",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "get /projects",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1438869383333,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "586df342-aaaf-741e-47d9-5530ce641e67",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{url}}/api/projects/20532/report?from=2015-08-06T10:23:07.909Z&to=2015-08-06T14:23:07.909Z",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "token",
+					"value": "sfdbBefVdNeANts9RwTwO1dsT0BnhV5dbu0hjNtb",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1438871548389,
+			"name": "get /projects/19091/report",
+			"description": "",
+			"collectionId": "08113610-9d18-1f2f-6b6a-2c20d34de539",
+			"responses": []
+		},
+		{
+			"id": "aa67962d-0437-02f3-b793-13f9dd7fec10",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{url}}/api/projects/20532/report?from=2015-08-06T10:23:07.909Z&to=2015-08-06T14:23:07.909Z&type=time_summary",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "08113610-9d18-1f2f-6b6a-2c20d34de539",
+			"data": [
+				{
+					"key": "token",
+					"value": "sfdbBefVdNeANts9RwTwO1dsT0BnhV5dbu0hjNtb",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "get /projects/19091/report/time_summary",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1438938478626,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "bc3da04c-dc71-caa7-fa67-fa023dbf06da",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{url}}/api/me",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "08113610-9d18-1f2f-6b6a-2c20d34de539",
+			"data": [
+				{
+					"key": "token",
+					"value": "sfdbBefVdNeANts9RwTwO1dsT0BnhV5dbu0hjNtb",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "get /me",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1438869331888,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "cafffa3b-df32-d853-e311-72d1ba464daa",
+			"headers": "Content-Type: application/json\n",
+			"url": "{{url}}/api/logout",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1438873657875,
+			"name": "logout",
+			"description": "",
+			"collectionId": "08113610-9d18-1f2f-6b6a-2c20d34de539",
+			"responses": [],
+			"rawModeData": ""
+		}
+	]
+}
